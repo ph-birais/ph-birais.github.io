@@ -3,184 +3,429 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PH Birais - Portfólio de Inovação</title>
+    <title>Pedro Henrique Birais | Arquiteto de Soluções em IA e Inovação</title>
+    <meta name="description" content="Arquiteto de soluções e líder técnico em IA e inovação, com mais de 8 anos de experiência. IA aplicada, robótica, IoT, XR e captação de projetos de P&amp;D com FINEP, EMBRAPII e BNDES." />
+    <meta name="author" content="Pedro Henrique Birais" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#047857" />
+    <link rel="canonical" href="https://ph-birais.github.io/" />
 
-    <!-- Meta Tags for Social Sharing (Open Graph) -->
-    <meta property="og:title" content="Pedro Henrique Birais - Portfólio de Inovação" />
-    <meta property="og:description" content="Portfólio profissional destacando atuação em IA, software e transformação digital." />
-    <meta property="og:image" content="https://ph-birais.github.io/images/profile.jpg" />
-    <meta property="og:url" content="https://ph-birais.github.io/" />
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/profile.jpg" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:site_name" content="Pedro Henrique Birais" />
+    <meta property="og:title" content="Pedro Henrique Birais | Arquiteto de Soluções em IA e Inovação" />
+    <meta property="og:description" content="IA aplicada, robótica, IoT e captação de projetos de P&amp;D. Mais de R$100 milhões em projetos de inovação escritos e aprovados desde 2021." />
+    <meta property="og:url" content="https://ph-birais.github.io/" />
+    <meta property="og:image" content="https://ph-birais.github.io/images/profile.jpg" />
+    <meta property="og:image:width" content="460" />
+    <meta property="og:image:height" content="460" />
+    <meta property="og:image:alt" content="Foto de Pedro Henrique Birais" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pedro Henrique Birais | Arquiteto de Soluções em IA e Inovação" />
+    <meta name="twitter:description" content="IA aplicada, robótica, IoT e captação de projetos de P&amp;D. Mais de R$100 milhões em projetos de inovação escritos e aprovados desde 2021." />
+    <meta name="twitter:image" content="https://ph-birais.github.io/images/profile.jpg" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pedro Henrique Birais",
+      "jobTitle": "Arquiteto de Soluções e Líder Técnico em IA e Inovação",
+      "url": "https://ph-birais.github.io/",
+      "image": "https://ph-birais.github.io/images/profile.jpg",
+      "alumniOf": "Universidade Federal do ABC (UFABC)",
+      "sameAs": [
+        "https://linkedin.com/in/phbirais",
+        "https://github.com/ph-birais",
+        "https://medium.com/@phbirais"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fontes carregadas sem bloquear a renderização -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;700&display=swap" /></noscript>
+
+    <link rel="stylesheet" href="./style.css" />
 </head>
-<body class="bg-light-bg text-dark-text font-sans">
-    <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#home" class="text-xl font-bold text-brand-green-dark border-2 border-brand-green-dark px-3 py-1 rounded">Portfólio</a>
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="#home" class="text-medium-text hover:text-brand-green-dark transition-colors">Início</a>
-            <a href="#about" class="text-medium-text hover:text-brand-green-dark transition-colors">Sobre</a>
-            <a href="#education" class="text-medium-text hover:text-brand-green-dark transition-colors">Formação</a>
-            <a href="#projects" class="text-medium-text hover:text-brand-green-dark transition-colors">Projetos</a>
-            <a href="#testimonials" class="text-medium-text hover:text-brand-green-dark transition-colors">Depoimentos</a>
-            <a href="#articles" class="text-medium-text hover:text-brand-green-dark transition-colors">Artigos</a>
-            <a href="#contact" class="bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
-          </div>
-          <div class="md:hidden">
-            <button id="hamburger-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" class="text-dark-text focus:outline-none">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </button>
-          </div>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
-              <a href="#home" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Início</a>
-              <a href="#about" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
-              <a href="#education" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Formação</a>
-              <a href="#projects" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Projetos</a>
-              <a href="#testimonials" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Depoimentos</a>
-              <a href="#articles" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Artigos</a>
-              <a href="#contact" class="mobile-nav-link w-full text-center mt-2 bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
+<body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skip">Pular para o conteúdo</a>
+
+    <!-- Header: um único menu, que vira hambúrguer no celular -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Principal" data-i18n-attr="aria-label:a11y.nav">
+            <a href="#home" class="logo" data-i18n="nav.logo">Portfólio</a>
+
+            <div class="nav-actions">
+                <button type="button" id="lang-toggle" class="lang-toggle" lang="en" aria-label="EN: Switch to English">EN</button>
+                <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu" data-i18n-attr="aria-label:a11y.openMenu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
             </div>
-        </div>
+
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#areas" data-i18n="nav.areas">Atuação</a></li>
+                <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+                <!-- Reativar junto com a seção de projetos:
+                <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                -->
+                <li><a href="#education" data-i18n="nav.education">Formação</a></li>
+                <li><a href="#testimonials" data-i18n="nav.testimonials">Depoimentos</a></li>
+                <li><a href="#articles" data-i18n="nav.articles">Artigos</a></li>
+                <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container mx-auto px-6">
-        <!-- Hero Section -->
-        <section id="home" class="pt-24 pb-10 flex items-center min-h-screen">
-          <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
-            <div class="animate-fade-in-left">
-              <span class="font-mono text-brand-green-dark">Olá, meu nome é</span>
-              <h1 class="text-4xl md:text-5xl font-extrabold text-dark-text my-3">Pedro Henrique Birais</h1>
-              <h2 class="text-xl md:text-2xl font-semibold text-brand-green-dark mb-6">Arquiteto de Soluções &amp; Líder Técnico em IA e Inovação.</h2>
-              <p class="text-lg text-medium-text mb-8 max-w-xl leading-relaxed">Especialista em transformar desafios complexos em soluções tecnológicas de alto impacto, com foco em Inteligência Artificial, IoT e Indústria 4.0.</p>
-              <div class="flex flex-wrap gap-4">
-                <a href="#projects" class="hero-button-primary">Meus Projetos</a>
-                <a href="https://linkedin.com/in/phbirais" target="_blank" rel="noopener noreferrer" class="hero-button-secondary">LinkedIn</a>
-              </div>
+    <main id="main">
+        <!-- Hero -->
+        <section id="home" class="hero container">
+            <div class="hero-text">
+                <span class="eyebrow" data-i18n="hero.hello">Olá, meu nome é</span>
+                <h1>Pedro Henrique Birais</h1>
+                <p class="hero-title" data-i18n="hero.title">Arquiteto de Soluções &amp; Líder Técnico em IA e Inovação.</p>
+                <p class="hero-lead" data-i18n="hero.lead">Especialista em transformar desafios complexos em soluções tecnológicas de alto impacto, com foco em Inteligência Artificial, IoT e Indústria 4.0.</p>
+                <div class="button-row">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaTalk">Falar comigo</a>
+                    <!-- OCULTO até preencher: troque [LINK_DO_PDF] pelo caminho do currículo (ex.: ./cv/pedro-birais-cv.pdf) e tire o comentário
+                    <a href="[LINK_DO_PDF]" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="hero.ctaCv">Baixar currículo (PDF)</a>
+                    -->
+                </div>
+                <a href="https://linkedin.com/in/phbirais" class="text-link hero-linkedin" target="_blank" rel="noopener noreferrer" data-i18n="hero.linkedin">Ver perfil no LinkedIn &rarr;</a>
             </div>
-            <div class="hidden lg:flex justify-center items-center animate-fade-in-right">
-              <div class="relative w-80 h-80 lg:w-96 lg:h-96">
-                <div class="absolute inset-0 bg-brand-green/20 rounded-full transform rotate-6"></div>
-                <img src="./images/profile.jpg" alt="Foto de Pedro Henrique Birais" class="relative rounded-full w-full h-full object-cover border-8 border-white shadow-2xl" />
-              </div>
+            <div class="hero-photo">
+                <div class="photo-frame">
+                    <img src="./images/profile.jpg" width="460" height="460" alt="Foto de Pedro Henrique Birais" data-i18n-attr="alt:hero.photoAlt" fetchpriority="high" />
+                </div>
             </div>
-          </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-10">
-            <div class="text-center mb-12">
-                <h2 class="section-title">Sobre <span class="text-brand-green-dark">Mim</span></h2>
-                <p class="section-subtitle">Apaixonado por resolver problemas complexos com tecnologia e inovação.</p>
-            </div>
-            <div class="grid lg:grid-cols-5 gap-12 items-start">
-                <div class="lg:col-span-3 space-y-4">
-                    <p class="text-medium-text leading-relaxed">Com mais de uma década de experiência em desenvolvimento de produtos e projetos, minha jornada é movida pela paixão de resolver problemas complexos com tecnologia. No Distrito Tecnológico do SENAI-SP, lidero projetos de inovação, focando na digitalização industrial através de IA, IoT e sistemas conectados.</p>
-                    <blockquote class="mt-6 p-4 border-l-4 border-brand-green bg-green-50 rounded-r-lg">
-                        <h4 class="font-bold text-lg text-dark-text mb-2">Minha Filosofia de Trabalho</h4>
-                        <p class="text-medium-text italic">"Acredito que a melhor inovação nasce da colaboração entre a expertise técnica e uma visão clara de futuro. Meu foco é traduzir a complexidade tecnológica em soluções de negócio com impacto mensurável, sempre colocando o usuário no centro da estratégia."</p>
+        <!-- Faixa de números -->
+        <section class="stats" aria-label="Destaques" data-i18n-attr="aria-label:stats.label">
+            <ul class="stats-grid container">
+                <li class="stat">
+                    <span class="stat-value" data-i18n="stats.v1">R$100 mi+</span>
+                    <span class="stat-text" data-i18n="stats.t1">em projetos de inovação escritos e aprovados desde 2021</span>
+                </li>
+                <li class="stat">
+                    <span class="stat-value" data-i18n="stats.v2">8+ anos</span>
+                    <span class="stat-text" data-i18n="stats.t2">de experiência em tecnologia e inovação</span>
+                </li>
+                <li class="stat">
+                    <span class="stat-value" data-i18n="stats.v3">Rede</span>
+                    <span class="stat-text" data-i18n="stats.t3">com FINEP, EMBRAPII, BNDES, CPQD, Instituto Eldorado, UFABC e USP</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sobre -->
+        <section id="about" class="section container">
+            <header class="section-head">
+                <h2 class="section-title" data-i18n-html="about.title">Sobre <span class="accent">mim</span></h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Tecnologia, pesquisa e negócio no mesmo projeto.</p>
+            </header>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about.bio">Sou arquiteto de soluções e líder técnico em IA e inovação, com mais de 8 anos transformando desafios da indústria em produtos e projetos de tecnologia. No Distrito Tecnológico do SENAI-SP, lidero projetos de digitalização industrial que combinam IA, IoT, robótica e sistemas conectados. Uno profundidade técnica, gestão de projetos e captação de fomento para tirar ideias do papel com impacto mensurável.</p>
+                    <blockquote class="philosophy">
+                        <h3 data-i18n="about.philosophyTitle">Minha filosofia de trabalho</h3>
+                        <p data-i18n="about.philosophy">"Acredito que a melhor inovação nasce da colaboração entre a expertise técnica e uma visão clara de futuro. Meu foco é traduzir a complexidade tecnológica em soluções de negócio com impacto mensurável, sempre colocando o usuário no centro da estratégia."</p>
                     </blockquote>
                 </div>
-                <div class="lg:col-span-2 space-y-6">
-                    <div class="info-card"><h3 class="info-card-title">Arquiteto de Soluções</h3><p class="text-medium-text">Desenhando sistemas escaláveis e resilientes que integram IA e IoT para a Indústria 4.0.</p></div>
-                    <div class="info-card"><h3 class="info-card-title">Gestão Técnica</h3><p class="text-medium-text">Liderando equipes multidisciplinares para entregar projetos de alto impacto, do conceito à produção.</p></div>
+                <div class="about-cards">
+                    <div class="card">
+                        <h3 class="card-title" data-i18n="about.card1Title">Arquiteto de Soluções</h3>
+                        <p data-i18n="about.card1Text">Desenhando sistemas escaláveis e resilientes que integram IA e IoT para a Indústria 4.0.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title" data-i18n="about.card2Title">Gestão Técnica</h3>
+                        <p data-i18n="about.card2Text">Liderando equipes multidisciplinares para entregar projetos de alto impacto, do conceito à produção.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section id="education" class="py-10">
-            <div class="text-center mb-16">
-                <h2 class="section-title">Formação <span class="text-brand-green-dark">Acadêmica</span></h2>
-                <p class="section-subtitle">Minha jornada de aprendizado contínuo, construindo uma base sólida em tecnologia, engenharia e gestão.</p>
-            </div>
-            <div class="relative max-w-2xl mx-auto">
-                <div class="absolute left-3 top-0 h-full w-0.5 bg-brand-green/30" aria-hidden="true"></div>
-                <div class="relative flex flex-col gap-12">
-                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2024 - Presente</p><h3 class="timeline-title">Doutorando em Sistemas Inteligentes</h3><p class="timeline-institution">Universidade Federal do ABC (UFABC)</p></div></div>
-                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0.2s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2024 - 2026</p><h3 class="timeline-title">MBA em Gestão de Projetos</h3><p class="timeline-institution">Fundação Getulio Vargas (FGV)</p></div></div>
-                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0.4s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2020 - 2023</p><h3 class="timeline-title">Mestrado em Engenharia Robótica</h3><p class="timeline-institution">Universidade Federal do ABC (UFABC)</p></div></div>
-                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0.6s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2013 - 2018</p><h3 class="timeline-title">Bacharel em Engenharia Robótica</h3><p class="timeline-institution">Universidade Federal do ABC (UFABC)</p></div></div>
-                </div>
+        <!-- Áreas de atuação -->
+        <section id="areas" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <h2 class="section-title" data-i18n-html="areas.title">Áreas de <span class="accent">atuação</span></h2>
+                    <p class="section-subtitle" data-i18n="areas.subtitle">Onde aplico tecnologia para resolver problemas reais da indústria.</p>
+                </header>
+                <ul class="cards-grid">
+                    <li class="card area-card">
+                        <h3 class="card-title" data-i18n="areas.a1Title">Robótica e humanoides</h3>
+                        <p data-i18n="areas.a1Text">POCs com robôs humanoides e quadrúpedes em ambiente industrial, apoiadas pela minha pesquisa de doutorado em autonomia.</p>
+                        <ul class="tags" aria-label="Tags">
+                            <li data-i18n="areas.a1Tag1">Humanoides</li><li data-i18n="areas.a1Tag2">Quadrúpedes</li><li data-i18n="areas.a1Tag3">Autonomia</li>
+                        </ul>
+                    </li>
+                    <li class="card area-card">
+                        <h3 class="card-title" data-i18n="areas.a2Title">IA aplicada</h3>
+                        <p data-i18n="areas.a2Text">Visão computacional, LLMs, agentes e RAG aplicados a problemas reais da indústria.</p>
+                        <ul class="tags" aria-label="Tags">
+                            <li data-i18n="areas.a2Tag1">Visão computacional</li><li>LLMs</li><li data-i18n="areas.a2Tag3">Agentes</li><li>RAG</li>
+                        </ul>
+                    </li>
+                    <li class="card area-card">
+                        <h3 class="card-title" data-i18n="areas.a3Title">Conectividade e IoT</h3>
+                        <p data-i18n="areas.a3Text">Arquiteturas com LoRaWAN, 5G e edge computing para monitoramento industrial.</p>
+                        <ul class="tags" aria-label="Tags">
+                            <li>LoRaWAN</li><li>5G</li><li>Edge</li><li data-i18n="areas.a3Tag4">Monitoramento</li>
+                        </ul>
+                    </li>
+                    <li class="card area-card">
+                        <h3 class="card-title" data-i18n="areas.a4Title">Realidade aumentada e XR</h3>
+                        <p data-i18n="areas.a4Text">Experiências imersivas para simulação, treinamento e validação de processos e produtos.</p>
+                        <ul class="tags" aria-label="Tags">
+                            <li>XR</li><li data-i18n="areas.a4Tag2">Simulação</li><li data-i18n="areas.a4Tag3">Treinamento</li><li data-i18n="areas.a4Tag4">Validação</li>
+                        </ul>
+                    </li>
+                    <li class="card area-card">
+                        <h3 class="card-title" data-i18n="areas.a5Title">Fomento à inovação</h3>
+                        <p data-i18n="areas.a5Text">Estruturação de projetos de inovação para captação com FINEP, EMBRAPII e BNDES.</p>
+                        <ul class="tags" aria-label="Tags">
+                            <li>FINEP</li><li>EMBRAPII</li><li>BNDES</li><li data-i18n="areas.a5Tag4">P&amp;D</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-10">
-            <div class="text-center mb-12">
-                <h2 class="section-title">Projetos em <span class="text-brand-green-dark">Destaque</span></h2>
-                <p class="section-subtitle">Soluções que desenvolvi e liderei, aplicando tecnologia para resolver desafios reais da indústria e do mercado.</p>
-            </div>
-            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project cards will be injected here by script.js -->
-            </div>
+        <!-- Como posso ajudar -->
+        <section id="services" class="section container">
+            <header class="section-head">
+                <h2 class="section-title" data-i18n-html="services.title">Como posso <span class="accent">ajudar</span></h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">Para empresas que querem tirar projetos de IA, robótica e P&amp;D do papel.</p>
+            </header>
+            <ul class="cards-grid cards-grid-3">
+                <li class="card service-card">
+                    <span class="service-num" aria-hidden="true">01</span>
+                    <h3 class="card-title" data-i18n="services.s1Title">Diagnóstico e desenho de soluções de IA</h3>
+                    <p data-i18n="services.s1Text">Mapeio o problema, avalio dados e viabilidade e desenho a arquitetura da solução, do caso de uso ao plano de implantação.</p>
+                    <a href="#contact" class="btn btn-primary btn-block" data-i18n="services.cta">Falar comigo</a>
+                </li>
+                <li class="card service-card">
+                    <span class="service-num" aria-hidden="true">02</span>
+                    <h3 class="card-title" data-i18n="services.s2Title">Estruturação e captação de projetos de P&amp;D com fomento</h3>
+                    <p data-i18n="services.s2Text">Transformo a ideia em um projeto técnico elegível, indico o instrumento de fomento adequado e escrevo a proposta.</p>
+                    <a href="#contact" class="btn btn-primary btn-block" data-i18n="services.cta">Falar comigo</a>
+                </li>
+                <li class="card service-card">
+                    <span class="service-num" aria-hidden="true">03</span>
+                    <h3 class="card-title" data-i18n="services.s3Title">POCs de IA e robótica</h3>
+                    <p data-i18n="services.s3Text">Provas de conceito rápidas e mensuráveis para validar a tecnologia no ambiente real antes de investir em escala.</p>
+                    <a href="#contact" class="btn btn-primary btn-block" data-i18n="services.cta">Falar comigo</a>
+                </li>
+            </ul>
         </section>
-        
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="py-10 bg-gray-50/50">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="section-title">O que dizem sobre o <span class="text-brand-green-dark">meu trabalho</span></h2>
-                    <p class="section-subtitle">Feedbacks de colegas e parceiros com quem tive o prazer de colaborar em diversos projetos.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="testimonial-card"><div class="testimonial-icon"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg></div><blockquote class="testimonial-quote"><p>"É um excelente profissional. Criativo, centrado, inteligente e tranquilo. Tem um cuidado especial com a qualidade de suas entregas!"</p></blockquote><div><div class="font-bold text-dark-text">SUELI TRAJANO</div><div class="text-sm text-brand-green-dark">BIG BRAIN</div></div></div>
-                    <div class="testimonial-card"><div class="testimonial-icon"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg></div><blockquote class="testimonial-quote"><p>"Se você procura resultado, profissionalismo e eficiência em modelagem e impressão de peças mecânicas em 3D, encontrou. Pedro domina as técnicas, processos e melhores materiais. Acelerou nossa prototipagem e nosso processo de industrialização. Recomendo!"</p></blockquote><div><div class="font-bold text-dark-text">VICTOR DIAGO</div><div class="text-sm text-brand-green-dark">ALFA SENSE</div></div></div>
-                    <div class="testimonial-card"><div class="testimonial-icon"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg></div><blockquote class="testimonial-quote"><p>"Muito bom o curso! Didática 100% Parabéns e obrigado!"</p></blockquote><div><div class="font-bold text-dark-text">ALUNO UDEMY</div><div class="text-sm text-brand-green-dark"></div></div></div>
-                </div>
+
+        <!-- PROJETOS (oculto por enquanto)
+             Para reativar: remova este comentário em volta da <section> e do modal no fim da página,
+             e descomente o link "Projetos" no menu. Os dados ficam em script.js (const projects).
+        <section id="projects" class="section container">
+            <header class="section-head">
+                <h2 class="section-title" data-i18n-html="projects.title">Projetos em <span class="accent">destaque</span></h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">Soluções que desenvolvi e liderei, aplicando tecnologia para resolver desafios reais da indústria e do mercado.</p>
+            </header>
+            <div id="projects-grid" class="cards-grid cards-grid-3"></div>
+        </section>
+        -->
+
+        <!-- Formação -->
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <h2 class="section-title" data-i18n-html="education.title">Formação <span class="accent">acadêmica</span></h2>
+                    <p class="section-subtitle" data-i18n="education.subtitle">Uma base sólida em tecnologia, engenharia e gestão.</p>
+                </header>
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <!-- OCULTO até preencher o ano de início (PT aqui e EN em script.js, chave education.e1Period)
+                        <p class="timeline-period" data-i18n="education.e1Period">[ANO_INICIO] – hoje</p>
+                        -->
+                        <h3 class="timeline-title" data-i18n="education.e1Title">Doutorado em Sistemas Inteligentes</h3>
+                        <p class="timeline-institution">Universidade Federal do ABC (UFABC)</p>
+                    </li>
+                    <li class="timeline-item">
+                        <!-- Quando concluir, troque "em andamento" por "concluído" (PT e EN em script.js) -->
+                        <p class="timeline-period" data-i18n="education.e2Period">2024 – 2026 · em andamento</p>
+                        <h3 class="timeline-title" data-i18n="education.e2Title">MBA em Gestão de Projetos</h3>
+                        <p class="timeline-institution">Fundação Getulio Vargas (FGV)</p>
+                    </li>
+                    <li class="timeline-item">
+                        <p class="timeline-period">2020 – 2023</p>
+                        <h3 class="timeline-title" data-i18n="education.e3Title">Mestrado em Engenharia Robótica</h3>
+                        <p class="timeline-institution">Universidade Federal do ABC (UFABC)</p>
+                    </li>
+                    <li class="timeline-item">
+                        <p class="timeline-period">2013 – 2018</p>
+                        <h3 class="timeline-title" data-i18n="education.e4Title">Bacharelado em Engenharia Robótica</h3>
+                        <p class="timeline-institution">Universidade Federal do ABC (UFABC)</p>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- Articles Section -->
-        <section id="articles" class="py-10">
-            <div class="text-center mb-12">
-                <h2 class="section-title">Pensando a <span class="text-brand-green-dark">Inovação</span></h2>
-                <p class="section-subtitle">Ideias, reflexões e aprendizados que compartilho sobre tecnologia, liderança e o futuro da indústria.</p>
+        <!-- Depoimentos -->
+        <section id="testimonials" class="section container">
+            <header class="section-head">
+                <h2 class="section-title" data-i18n-html="testimonials.title">O que dizem sobre o <span class="accent">meu trabalho</span></h2>
+                <p class="section-subtitle" data-i18n="testimonials.subtitle">Feedbacks de colegas e parceiros com quem colaborei.</p>
+            </header>
+            <ul class="cards-grid cards-grid-2">
+                <li class="card testimonial">
+                    <svg class="quote-icon" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg>
+                    <blockquote><p data-i18n="testimonials.t1">"É um excelente profissional. Criativo, centrado, inteligente e tranquilo. Tem um cuidado especial com a qualidade de suas entregas!"</p></blockquote>
+                    <p class="testimonial-author">Sueli Trajano</p>
+                    <!-- Quando tiver o cargo: <p class="testimonial-role">[CARGO] · Big Brain</p> -->
+                    <p class="testimonial-role">Big Brain</p>
+                </li>
+                <li class="card testimonial">
+                    <svg class="quote-icon" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg>
+                    <blockquote><p data-i18n="testimonials.t2">"Se você procura resultado, profissionalismo e eficiência em modelagem e impressão de peças mecânicas em 3D, encontrou. Pedro domina as técnicas, processos e melhores materiais. Acelerou nossa prototipagem e nosso processo de industrialização. Recomendo!"</p></blockquote>
+                    <p class="testimonial-author">Victor Diago</p>
+                    <!-- Quando tiver o cargo: <p class="testimonial-role">[CARGO] · Alfa Sense</p> -->
+                    <p class="testimonial-role">Alfa Sense</p>
+                </li>
+                <!-- DEPOIMENTOS DE CLIENTES: copie o bloco abaixo, tire o comentário e preencha.
+                     Para traduzir, adicione data-i18n="testimonials.t3" no <p> da citação e a chave em script.js.
+                <li class="card testimonial">
+                    <svg class="quote-icon" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg>
+                    <blockquote><p>"[TEXTO DO DEPOIMENTO]"</p></blockquote>
+                    <p class="testimonial-author">[NOME]</p>
+                    <p class="testimonial-role">[CARGO] · [EMPRESA]</p>
+                </li>
+                -->
+            </ul>
+            <p class="note" data-i18n="testimonials.note" hidden></p><!-- aparece só em inglês -->
+
+        </section>
+
+        <!-- Artigos -->
+        <section id="articles" class="section section-alt">
+            <div class="container">
+                <header class="section-head">
+                    <h2 class="section-title" data-i18n-html="articles.title">Pensando a <span class="accent">inovação</span></h2>
+                    <p class="section-subtitle" data-i18n="articles.subtitle">Ideias e aprendizados sobre tecnologia, liderança e o futuro da indústria.</p>
+                </header>
+                <ul class="cards-grid cards-grid-3">
+                    <li>
+                        <a href="https://www.proceedings.blucher.com.br/article-details/inventory-automation-development-of-computer-vision-in-drones-39878" target="_blank" rel="noopener noreferrer" class="card article-card">
+                            <p class="article-meta"><span class="lang-badge" title="Em inglês" data-i18n-attr="title:articles.inEnglish">EN</span> Blucher Proceedings</p>
+                            <h3 class="article-title" lang="en">Inventory automation: development of computer vision in drones</h3>
+                            <span class="article-link" data-i18n="articles.read">Ler artigo &rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://phbirais.medium.com/o-que-significa-saber-ia-no-curr%C3%ADculo-profissional-do-futuro-abcafe422a2f" target="_blank" rel="noopener noreferrer" class="card article-card">
+                            <p class="article-meta"><span class="lang-badge" title="Em português" data-i18n-attr="title:articles.inPortuguese">PT</span> Medium</p>
+                            <h3 class="article-title" lang="pt-BR">O que significa saber IA no currículo profissional do futuro?</h3>
+                            <span class="article-link" data-i18n="articles.read">Ler artigo &rarr;</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://phbirais.medium.com/7-benef%C3%ADcios-da-realidade-aumentada-na-educa%C3%A7%C3%A3o-4ded4383cca5" target="_blank" rel="noopener noreferrer" class="card article-card">
+                            <p class="article-meta"><span class="lang-badge" title="Em português" data-i18n-attr="title:articles.inPortuguese">PT</span> Medium</p>
+                            <h3 class="article-title" lang="pt-BR">7 benefícios da Realidade Aumentada na Educação</h3>
+                            <span class="article-link" data-i18n="articles.read">Ler artigo &rarr;</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                <a href="https://www.proceedings.blucher.com.br/article-details/inventory-automation-development-of-computer-vision-in-drones-39878" target="_blank" rel="noopener noreferrer" class="article-card"><p class="article-platform">Blucher Proceedings</p><h3 class="article-title">INVENTORY AUTOMATION DEVELOPMENT OF COMPUTER VISION IN DRONES</h3><span class="article-link">Ler artigo &rarr;</span></a>
-                <a href="https://phbirais.medium.com/o-que-significa-saber-ia-no-curr%C3%ADculo-profissional-do-futuro-abcafe422a2f" target="_blank" rel="noopener noreferrer" class="article-card"><p class="article-platform">Medium</p><h3 class="article-title">O que significa saber IA no currículo profissional do futuro?</h3><span class="article-link">Ler artigo &rarr;</span></a>
-                <a href="https://phbirais.medium.com/7-benef%C3%ADcios-da-realidade-aumentada-na-educa%C3%A7%C3%A3o-4ded4383cca5" target="_blank" rel="noopener noreferrer" class="article-card"><p class="article-platform">Medium</p><h3 class="article-title">7 benefícios da Realidade Aumentada na Educação</h3><span class="article-link">Ler artigo &rarr;</span></a>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact" class="section container">
+            <header class="section-head">
+                <h2 class="section-title" data-i18n-html="contact.title">Vamos <span class="accent">conversar?</span></h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">Tem um desafio de IA, robótica ou um projeto de P&amp;D para tirar do papel? Me chame por um dos canais abaixo.</p>
+            </header>
+
+            <div class="contact-grid">
+                <div class="contact-side">
+                    <!-- OCULTO até preencher: troque [CALENDLY_OU_EMAIL] pelo link do Calendly (https://calendly.com/...) ou mailto:seu@email,
+                         tire o comentário e mude o texto abaixo para "Ou me encontre em:" (chave contact.orFind)
+                    <a href="[CALENDLY_OU_EMAIL]" class="btn btn-primary btn-lg" target="_blank" rel="noopener" data-i18n="contact.schedule">Agendar conversa</a>
+                    -->
+
+                    <p class="contact-or" data-i18n="contact.findMe">Me encontre em:</p>
+                    <ul class="social-list">
+                        <li><a href="https://linkedin.com/in/phbirais" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>LinkedIn</span></a></li>
+                        <li><a href="https://github.com/ph-birais" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span></a></li>
+                        <li><a href="mailto:phbirais@gmail.com" class="social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                            <span>phbirais@gmail.com</span></a></li>
+                        <li><a href="tel:+5511976756446" class="social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>+55 11 97675-6446</span></a></li>
+                        <li><a href="https://medium.com/@phbirais" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"></path></svg>
+                            <span>Medium</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- FORMULÁRIO OCULTO até preencher: troque [ID_DO_FORMSPREE] pelo código do formulário do formspree.io (ex.: xyzabcde)
+                     e tire o comentário em volta do <form>.
+                <form id="contact-form" class="card contact-form" action="https://formspree.io/f/[ID_DO_FORMSPREE]" method="POST">
+                    <div class="field">
+                        <label for="cf-name" data-i18n="contact.name">Nome</label>
+                        <input id="cf-name" name="name" type="text" autocomplete="name" required />
+                    </div>
+                    <div class="field">
+                        <label for="cf-email" data-i18n="contact.email">E-mail</label>
+                        <input id="cf-email" name="email" type="email" autocomplete="email" required />
+                    </div>
+                    <div class="field">
+                        <label for="cf-company"><span data-i18n="contact.company">Empresa</span> <span class="optional" data-i18n="contact.optional">(opcional)</span></label>
+                        <input id="cf-company" name="company" type="text" autocomplete="organization" />
+                    </div>
+                    <div class="field">
+                        <label for="cf-message" data-i18n="contact.message">Mensagem</label>
+                        <textarea id="cf-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.send">Enviar mensagem</button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+                -->
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="py-10 text-center border-t border-gray-200">
-      <h2 class="section-title">Vamos Colaborar?</h2>
-      <p class="section-subtitle mb-8">Estou sempre aberto a novas conexões, projetos desafiadores e oportunidades para compartilhar conhecimento. Se você tem uma ideia ou um desafio, vamos conversar.</p>
-      <div class="flex justify-center items-center gap-6 mb-12">
-        <a href="https://linkedin.com/in/phbirais" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Meu perfil no LinkedIn"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-        <a href="https://github.com/ph-birais" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Meu perfil no GitHub"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-        <a href="mailto:phbirais@gmail.com" class="social-icon" aria-label="Enviar um e-mail"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
-        <a href="tel:+5511976756446" class="social-icon" aria-label="Ligar para o meu telefone"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
-        <a href="https://medium.com/@phbirais" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Meu perfil no Medium"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.45,12.06a4.87,4.87,0,0,0-1.2.1,1.58,1.58,0,0,0-.9.45,1.25,1.25,0,0,0-.4,1,1,1,0,0,0,.1.45,1.3,1.3,0,0,0,.4.5,1.72,1.72,0,0,0,.8.3,4.68,4.68,0,0,0,1.2.1h.1a4.68,4.68,0,0,0,1.2-.1,1.72,1.72,0,0,0,.8-.3,1.3,1.3,0,0,0,.4-.5,1,1,0,0,0,.1-.45,1.25,1.25,0,0,0-.4-1,1.58,1.58,0,0,0-.9-.45,4.87,4.87,0,0,0-1.2-.1Zm5-1.5a1.7,1.7,0,0,0-1,.4,1.4,1.4,0,0,0-.4,1v5a1.4,1.4,0,0,0,.4,1,1.7,1.7,0,0,0,1,.4h.1a1.7,1.7,0,0,0,1-.4,1.4,1.4,0,0,0,.4-1v-5a1.4,1.4,0,0,0-.4-1,1.7,1.7,0,0,0-1-.4Zm5.1-.4a2,2,0,0,0-1.2.4,1.3,1.3,0,0,0-.5,1V16a1.2,1.2,0,0,0,.5,1,2,2,0,0,0,1.2.4h.1a1.8,1.8,0,0,0,1.2-.4,1.2,1.2,0,0,0,.5-1V11.5a1.3,1.3,0,0,0-.5-1,2,2,0,0,0-1.2-.4Z"></path></svg></a>
-      </div>
-      <p class="font-mono text-brand-green-dark tracking-wider">Transformando ideias em soluções — com código, dados e visão.</p>
-      <p class="text-gray-500 text-sm mt-8">&copy; <span id="year"></span> Pedro Henrique Birais. Todos os direitos reservados.</p>
+    <footer class="site-footer">
+        <p class="footer-tagline" data-i18n="footer.tagline">Transformando ideias em soluções — com código, dados e visão.</p>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Pedro Henrique Birais. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
     </footer>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div id="modal-content" class="bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 relative">
-            <button id="modal-close-button" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800" aria-label="Fechar modal">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    <!-- MODAL DE PROJETOS (reativar junto com a seção de projetos)
+    <div id="project-modal" class="modal" hidden>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+            <button type="button" id="modal-close-button" class="modal-close" aria-label="Fechar" data-i18n-attr="aria-label:a11y.close">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
-            <div id="modal-body">
-                <!-- Modal content will be injected here by script.js -->
-            </div>
+            <div id="modal-body"></div>
         </div>
     </div>
+    -->
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </body>
 </html>
